@@ -213,6 +213,9 @@ importers:
 
   apps/backend:
     dependencies:
+      '@gantry/types':
+        specifier: workspace:*
+        version: link:../../packages/types
       '@nestjs/common':
         specifier: ^11.0.1
         version: 11.1.27(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -301,6 +304,9 @@ importers:
 
   apps/frontend:
     dependencies:
+      '@gantry/types':
+        specifier: workspace:*
+        version: link:../../packages/types
       next:
         specifier: 16.2.9
         version: 16.2.9(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -335,6 +341,8 @@ importers:
       typescript:
         specifier: ^5
         version: 5.9.3
+
+  packages/types: {}
 
 packages:
 

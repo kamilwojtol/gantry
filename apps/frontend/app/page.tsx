@@ -1,4 +1,11 @@
 import Image from "next/image";
+import type { Kanban } from "@gantry/types";
+
+const sampleKanban: Kanban = {
+  id: "1",
+  name: "Project A",
+  tasks: ["Task 1", "Task 2"],
+};
 
 export default function Home() {
   return (
@@ -13,6 +20,9 @@ export default function Home() {
           priority
         />
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            Shared type example: {sampleKanban.name}
+          </p>
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>

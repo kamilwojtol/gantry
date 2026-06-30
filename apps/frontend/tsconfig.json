@@ -19,7 +19,8 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@gantry/types": ["../../packages/types/types.ts"]
     }
   },
   "include": [
